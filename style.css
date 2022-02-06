@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* I need space-between to make header and footer stick to the top and bottom of the viewport*/
+}
+
+
+/*******************************************************************From here I start styling the header section of the page**************************************************************/
+
+header {
+  display: flex;
+  flex-direction: column; /* Note: One of the  initial values of flex items is that the items will stretch to fill the size of the cross axis. In this case the horizontal axis is the cross axis. So the flex items will stretch horizontally. */
+  height: 33vh;
+  padding: 18px 210px;
+  background-color: #1f2937;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex; /* Note: flex direction is row, justify content is flex-start */
+  margin: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
+  padding: 0;
+}
+
+.awesome { /* Note: This is a block element, therefore this box will become as wide as its container (header). Also, really important, by default, the elements inside a box are laid out in normal flow, which means that they behave just like any other block and inline elements.
+
+However, we can change this behaviour (the inner display type) by using display values like flex, which is what I have done below */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px; /* By changing the value I can push up and down this container (container containing the headline and img-placeholder) */
+}
+
+.headline,
+.img-placeholder {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 436px;
+}
+
+.headline {
+  flex-direction: column;
+}
+
+.img-placeholder {
+  background: gray;
+  font-size: 18px;
+  color: #e5e7eb;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+li {
+  list-style-type: none;
+  margin:0 0 0 30px; /* Create some space between header links. Attention: The margin property creates some issues. It pushes the other container further down, which I don't want. That's why I used margin-left instead of margin  */
+  padding: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
+}
+
+h1 {
+  font-size: 48px;
+  font-weight:900;
+  color: #f9faf8;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+
+/* With this CSS rule I can align button on the left. align-self only aligns items accross the cross axis  */
+button {
+  align-self: flex-start; 
+  margin-top: 10px;
+  background-color: #3882f6;
+  font-size: 18px;
+  color: #e5e7eb;
+  border: none; /* I need this to get rid of the shadow in the button */
+  border-radius: 3px;
+}
+
+
+/*******************************************************************From here I start styling the second section of the page***************************************************************/
