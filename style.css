@@ -87,11 +87,11 @@ a {
   text-decoration: none;
 }
 
-
 /* With this CSS rule I can align button on the left. align-self only aligns items accross the cross axis  */
 button {
   align-self: flex-start; 
   margin-top: 10px;
+  padding: 5px 20px;
   background-color: #3882f6;
   font-size: 18px;
   color: #e5e7eb;
@@ -101,3 +101,44 @@ button {
 
 
 /*******************************************************************From here I start styling the second section of the page***************************************************************/
+
+.random-info {
+  height: 22vh;
+  /* I need to center the direct children of this div */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* I need to push this div closer to the header */
+  margin-bottom: 215px; 
+}
+
+.all-media {
+  display: flex; /* Since this container is already centered, all I need to do is, to lay its direct children horizontally. display-flex does just that. */
+}
+
+.media {
+  /* I need the text to come under the image */
+  height: auto;
+  width: 150px;
+  /* I need some space between these items */
+  margin: 0 10px;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #3882f6;
+  border-radius: 8px;
+}
+
+.subtext {
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
