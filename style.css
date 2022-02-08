@@ -54,7 +54,7 @@
   }
 
   .img-placeholder {
-    background: gray;
+    background: #575757;
     font-size: 1em;
     color: #e5e7eb;
     border-radius: 2px;
@@ -74,7 +74,7 @@
 
   li {
     list-style-type: none;
-    margin:0 0 0 1.5em; /* Create some space between header links. Attention: The margin property creates some issues. It pushes the other container further down, which I don't want. That's why I used margin-left instead of margin  */
+    margin:0 0 0 2em; /* Create some space between header links. Attention: The margin property creates some issues. It pushes the other container further down, which I don't want. That's why I used margin-left instead of margin  */
     padding: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
   }
 
@@ -163,6 +163,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 21em;
+    background-color: #e5e7eb;
+    padding: 7em;
   }
 
   .text {
@@ -176,5 +178,52 @@
     font-weight: 900;
     color: #1f2937;
   }
+
+
+
+  /**************************************************************************************************                       From here I style the Call To Action section                              *************************************************************************************************/
+    .call-to-action {
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      background-color: #3882f6;
+      height: auto;
+      width: 35em;
+      padding: 2em 4em;
+      border-radius: 6px;
+      margin-top: 5em;
+    }
+
+    .cta-text {
+      color: #f9faf8;
+      font-size: 1.1em;
+      font-weight: 900;
+    }
+
+    span {
+      font-weight: normal;
+      font-size: 0.8em;
+      color: #e5e7eb;
+    }
+
+    .cta-button {
+      font-size: 0.9em;
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+
+    /************************************************************************************************                           From Here I style the footer                                         ***********************************************************************************************/
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1f2937;
+      width: auto;
+      padding: 1.5em;
+      margin-top: 5em;
+      font-size: 0.8em;
+      color: #e5e7eb
+    }
 
 }

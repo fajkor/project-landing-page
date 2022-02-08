@@ -14,3 +14,7 @@ A link to the project can be found here: https://www.theodinproject.com/paths/fo
 A link to The Odin Project carriculum can be found here: https://www.theodinproject.com/paths
 
 A note: You will see that in my code I comment a lot. I do this for three reasons. First, to reinforce my learning. Second, as a reference. When I run into a similar problem in future projects, I can come back here and see if I can get an idea of how to solve it. And third, when I come back to my project it's easier for me to continue from where I have left of.
+
+Note on the photo: I am using a photo with a free to use license. 
+Title of the photo: Seashore Under White and Blue Sky during Sunset
+Photographer: Pixabay
