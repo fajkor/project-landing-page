@@ -153,26 +153,28 @@
     margin-top: 11em;
     /* border: 1px solid white; */
   }
-}
+
 
 /***************************************************************************************************************From here I start styling the third section of the website******************************/
 
-.quote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 21em;
-}
+  .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21em;
+  }
 
-.text {
-  height: auto; 
-  width: 35em;
-  color: #1f2937;
-}
+  .text {
+    height: auto; 
+    width: 35em;
+    color: #1f2937;
+  }
 
-.thor {
-  margin-left: 25em;
-  font-weight: 900;
-  color: #1f2937;
+  .thor {
+    margin-left: 25em;
+    font-weight: 900;
+    color: #1f2937;
+  }
+
 }
