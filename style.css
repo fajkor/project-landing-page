@@ -1,144 +1,178 @@
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* I need space-between to make header and footer stick to the top and bottom of the viewport*/
+@media only screen and (min-width: 1366px) {
+
+  /* For 15.6 inch screen */
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* I need space-between to make header and footer stick to the top and bottom of the viewport*/
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  /*******************************************************************From here I start styling the header section of the page**************************************************************/
+
+  header {
+    display: flex;
+    flex-direction: column; /* Note: One of the  initial values of flex items is that the items will stretch to fill the size of the cross axis. In this case the horizontal axis is the cross axis. So the flex items will stretch horizontally. */
+    height: auto;
+    padding: 1.5em 8em 3.5em 8em;
+    background-color: #1f2937;
+  }
+
+  .logo-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex; /* Note: flex direction is row, justify content is flex-start */
+    margin: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
+    padding: 0;
+  }
+
+  .awesome { /* Note: This is a block element, therefore this box will become as wide as its container (header). Also, really important, by default, the elements inside a box are laid out in normal flow, which means that they behave just like any other block and inline elements.
+
+  However, we can change this behaviour (the inner display type) by using display values like flex, which is what I have done below */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em /* By changing the value I can push up and down this container (container containing the headline and img-placeholder) */
+  }
+
+  .headline,
+  .img-placeholder {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 35em;
+    height: 10em;
+  }
+
+  .headline {
+    flex-direction: column;
+  }
+
+  .img-placeholder {
+    background: gray;
+    font-size: 1em;
+    color: #e5e7eb;
+    border-radius: 2px;
+  }
+
+  p {
+    font-size: 1em;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 1.4em;
+    color: #f9faf8;
+  }
+
+  li {
+    list-style-type: none;
+    margin:0 0 0 1.5em; /* Create some space between header links. Attention: The margin property creates some issues. It pushes the other container further down, which I don't want. That's why I used margin-left instead of margin  */
+    padding: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
+  }
+
+  h1 {
+    align-self: flex-start; /* I need this to stick on the left side of the container */
+    font-size: 2.1em;
+    font-weight:900;
+    color: #f9faf8;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-size: 1em;
+    color: #e5e7eb;
+    text-decoration: none;
+  }
+
+  /* With this CSS rule I can align button on the left. align-self only aligns items accross the cross axis  */
+  button {
+    align-self: flex-start;
+    margin-top: 0.6em;
+    padding: 0.3em 1.2em;
+    background-color: #3882f6;
+    font-size: 1em;
+    color: #e5e7eb;
+    border: none; /* I need this to get rid of the shadow in the button */
+    border-radius: 3px;
+  }
+
+
+  /*******************************************************************From here I start styling the second section of the page***************************************************************/
+
+  .random-info {
+    height: 5em;
+    /* I need to center the direct children of this div */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .all-media {
+    display: flex; /* Since this container is already centered, all I need to do is, to lay its direct children horizontally. display-flex does just that. */
+  }
+
+  .media {
+    /* I need the text to come under the image */
+    height: auto;
+    width: 9em;
+    /* I need some space between these items */
+    margin: 1.3em 1.1em;
+  }
+
+  .image {
+    height: 9em;
+    width: 9em;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+  }
+
+  .subtext {
+    font-size: 0.89em;
+    text-align: center;
+    padding: 0.4em;
+    color: #1f2937;
+  }
+
+  h2 {
+    /* I need some space between the h2 and the header */
+    font-size: 2em;
+    font-weight: 900;
+    color: #1f2937;
+    /* margin: 0;
+    padding: 1.7em 0 0.6em 0; */
+    margin-top: 11em;
+    /* border: 1px solid white; */
+  }
 }
 
+/***************************************************************************************************************From here I start styling the third section of the website******************************/
 
-/*******************************************************************From here I start styling the header section of the page**************************************************************/
-
-header {
-  display: flex;
-  flex-direction: column; /* Note: One of the  initial values of flex items is that the items will stretch to fill the size of the cross axis. In this case the horizontal axis is the cross axis. So the flex items will stretch horizontally. */
-  height: 33vh;
-  padding: 18px 210px;
-  background-color: #1f2937;
-}
-
-.logo-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex; /* Note: flex direction is row, justify content is flex-start */
-  margin: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
-  padding: 0;
-}
-
-.awesome { /* Note: This is a block element, therefore this box will become as wide as its container (header). Also, really important, by default, the elements inside a box are laid out in normal flow, which means that they behave just like any other block and inline elements.
-
-However, we can change this behaviour (the inner display type) by using display values like flex, which is what I have done below */
-  display: flex;
-  justify-content: space-between;
-  padding-top: 60px; /* By changing the value I can push up and down this container (container containing the headline and img-placeholder) */
-}
-
-.headline,
-.img-placeholder {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  width: 436px;
-}
-
-.headline {
-  flex-direction: column;
-}
-
-.img-placeholder {
-  background: gray;
-  font-size: 18px;
-  color: #e5e7eb;
-  border-radius: 2px;
-}
-
-p {
-  font-size: 18px;
-  color: #e5e7eb;
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  font-size: 24px;
-  color: #f9faf8;
-}
-
-li {
-  list-style-type: none;
-  margin:0 0 0 30px; /* Create some space between header links. Attention: The margin property creates some issues. It pushes the other container further down, which I don't want. That's why I used margin-left instead of margin  */
-  padding: 0; /* With padding and margin set to 0, I can override user agent stylesheet */
-}
-
-h1 {
-  font-size: 48px;
-  font-weight:900;
-  color: #f9faf8;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  font-size: 18px;
-  color: #e5e7eb;
-  text-decoration: none;
-}
-
-/* With this CSS rule I can align button on the left. align-self only aligns items accross the cross axis  */
-button {
-  align-self: flex-start; 
-  margin-top: 10px;
-  padding: 5px 20px;
-  background-color: #3882f6;
-  font-size: 18px;
-  color: #e5e7eb;
-  border: none; /* I need this to get rid of the shadow in the button */
-  border-radius: 3px;
-}
-
-
-/*******************************************************************From here I start styling the second section of the page***************************************************************/
-
-.random-info {
-  height: 22vh;
-  /* I need to center the direct children of this div */
+.quote {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* I need to push this div closer to the header */
-  margin-bottom: 215px; 
+  margin-top: 21em;
 }
 
-.all-media {
-  display: flex; /* Since this container is already centered, all I need to do is, to lay its direct children horizontally. display-flex does just that. */
+.text {
+  height: auto; 
+  width: 35em;
+  color: #1f2937;
 }
 
-.media {
-  /* I need the text to come under the image */
-  height: auto;
-  width: 150px;
-  /* I need some space between these items */
-  margin: 0 10px;
-}
-
-.image {
-  height: 150px;
-  width: 150px;
-  border: 2px solid #3882f6;
-  border-radius: 8px;
-}
-
-.subtext {
-  text-align: center;
-  padding: 10px;
-}
-
-h2 {
-  font-size: 36px;
+.thor {
+  margin-left: 25em;
   font-weight: 900;
   color: #1f2937;
 }
