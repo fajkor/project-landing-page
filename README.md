@@ -15,6 +15,13 @@ A link to The Odin Project carriculum can be found here: https://www.theodinproj
 
 A note: You will see that in my code I comment a lot. I do this for three reasons. First, to reinforce my learning. Second, as a reference. When I run into a similar problem in future projects, I can come back here and see if I can get an idea of how to solve it. And third, when I come back to my project it's easier for me to continue from where I have left of.
 
-Note on the photo: I am using a photo with a free to use license. 
-Title of the photo: Seashore Under White and Blue Sky during Sunset
-Photographer: Pixabay
+Note on the images: I am using images with a free to use license. The owners of the images you'll find them if you follow the links below:
+https://pixabay.com/photos/navagio-navagio-beach-beach-sea-1743152/
+https://pixabay.com/photos/marrakech-marketplace-morocco-4500910/
+https://pixabay.com/photos/sea-boat-loutro-crete-greece-6597592/
+https://pixabay.com/photos/rio-de-janeiro-city-sunset-sunlight-6000556/
+https://pixabay.com/photos/tokyo-night-shinjuku-lighting-eve-4763976/
+
+
+
+

@@ -8,17 +8,18 @@
     flex-direction: column;
     justify-content: space-between; /* I need space-between to make header and footer stick to the top and bottom of the viewport*/
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, #e5e7eb, #ebe7e5);
   }
 
 
-  /*******************************************************************From here I start styling the header section of the page**************************************************************/
+  /************************************************************************************************* From here I start styling the header section *************************************************************************************************/
 
   header {
     display: flex;
     flex-direction: column; /* Note: One of the  initial values of flex items is that the items will stretch to fill the size of the cross axis. In this case the horizontal axis is the cross axis. So the flex items will stretch horizontally. */
     height: auto;
     padding: 1.5em 8em 3.5em 8em;
-    background-color: #1f2937;
+    background: linear-gradient(30deg, #5c1e03, #0c335e, #035c16, #1085c6);
   }
 
   .logo-nav {
@@ -32,7 +33,7 @@
     padding: 0;
   }
 
-  .awesome { /* Note: This is a block element, therefore this box will become as wide as its container (header). Also, really important, by default, the elements inside a box are laid out in normal flow, which means that they behave just like any other block and inline elements.
+  .dream-destination { /* Note: This is a block element, therefore this box will become as wide as its container (header). Also, really important, by default, the elements inside a box are laid out in normal flow, which means that they behave just like any other block and inline elements.
 
   However, we can change this behaviour (the inner display type) by using display values like flex, which is what I have done below */
     display: flex;
@@ -54,10 +55,9 @@
   }
 
   .img-placeholder {
-    background: #575757;
     font-size: 1em;
     color: #e5e7eb;
-    border-radius: 2px;
+    border-radius: 6px;
   }
 
   p {
@@ -87,7 +87,7 @@
     padding: 0;
   }
 
-  a {
+  li a {
     font-size: 1em;
     color: #e5e7eb;
     text-decoration: none;
@@ -106,15 +106,16 @@
   }
 
 
-  /*******************************************************************From here I start styling the second section of the page***************************************************************/
+  /**************************************************************************************************From here I start styling the second section of the page  **************************************************************************************************/
 
-  .random-info {
+  .loved-destinations {
     height: 5em;
     /* I need to center the direct children of this div */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(0deg, #e5e7eb, #ebe7e5);
   }
 
   .all-media {
@@ -132,13 +133,24 @@
   .image {
     height: 9em;
     width: 9em;
-    border: 2px solid #3882f6;
-    border-radius: 8px;
+    border-radius: 6px;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+
+  a {
+    color: #1f2937;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 900;
   }
 
   .subtext {
+    width: 144px;
     font-size: 0.89em;
-    text-align: center;
+    text-align: left;
     padding: 0.4em;
     color: #1f2937;
   }
@@ -148,14 +160,11 @@
     font-size: 2em;
     font-weight: 900;
     color: #1f2937;
-    /* margin: 0;
-    padding: 1.7em 0 0.6em 0; */
     margin-top: 11em;
-    /* border: 1px solid white; */
   }
 
 
-/***************************************************************************************************************From here I start styling the third section of the website******************************/
+/****************************************************************************************************           From here I start styling the third section of the website                  ****************************************************************************************************/
 
   .quote {
     display: flex;
@@ -163,7 +172,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 21em;
-    background-color: #e5e7eb;
+    background: linear-gradient(0deg, #f2f3f7, #536176 );
     padding: 7em;
   }
 
@@ -186,7 +195,7 @@
       align-self: center;
       display: flex;
       justify-content: space-between;
-      background-color: #3882f6;
+      background: linear-gradient(100deg, #1f2937, #3882f6 );
       height: auto;
       width: 35em;
       padding: 2em 4em;
@@ -218,7 +227,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #1f2937;
+      background: linear-gradient(30deg, #5c1e03, #0c335e, #035c16, #1085c6);
       width: auto;
       padding: 1.5em;
       margin-top: 5em;
